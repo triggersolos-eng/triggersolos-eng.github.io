@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>About | Kanmisam Studio</title>
+<meta name="description" content="About Oyekanmi Samuel, a web designer and developer in Lagos, Nigeria.">
+<meta property="og:title" content="About | Kanmisam Studio">
+<meta property="og:description" content="About Oyekanmi Samuel, a web designer and developer in Lagos, Nigeria.">
+<meta property="og:type" content="website">
+<style>
+:root{--bg:#f6f5fb;--surface:#ffffff;--text:#14121f;--muted:#5d5a70;--accent:#6d3df5;--accent2:#14b8c8;--border:#e3e0f0;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b0a14;--surface:#15132a;--text:#f3f1ff;--muted:#a9a5c4;--accent:#9b7bff;--accent2:#35d3e0;--border:#2a2745;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b0a14;--surface:#15132a;--text:#f3f1ff;--muted:#a9a5c4;--accent:#9b7bff;--accent2:#35d3e0;--border:#2a2745;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--text);font:17px/1.6 Roboto,"Segoe UI",system-ui,-apple-system,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.15}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent2);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--border)}
+nav{max-width:1000px;margin:auto;padding:12px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:6px 18px}
+.logo{font-weight:700;font-size:19px;color:var(--text);text-decoration:none}
+.logo span{color:var(--accent)}
+.links{display:flex;flex-wrap:wrap;gap:4px 18px}
+.links a{color:var(--muted);text-decoration:none;font-size:15px;padding:4px 0}
+.links a:hover,.links a[aria-current]{color:var(--accent)}
+.wrap{max-width:1000px;margin:auto;padding:0 20px}
+section{padding:46px 0}
+.eyebrow{color:var(--accent);font-size:14px;font-weight:600;margin-bottom:6px}
+h1{font-size:clamp(32px,8vw,52px);margin-bottom:12px}
+h2{font-size:clamp(24px,5.5vw,34px);margin-bottom:12px}
+h3{font-size:21px;margin-bottom:6px}
+.sub{color:var(--muted);max-width:36em}
+.grid{display:grid;gap:18px;margin-top:26px}
+@media(min-width:760px){.grid.two{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}.about{grid-template-columns:260px 1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:22px}
+.card p{color:var(--muted)}
+.price{display:block;margin-top:10px;font-weight:600;color:var(--accent)}
+.thumb{aspect-ratio:2/1;border-radius:14px;margin-bottom:14px;overflow:hidden;background:linear-gradient(135deg,var(--accent),var(--accent2))}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block}
+.tag{display:inline-block;font-size:13px;font-weight:600;color:var(--accent);border:1px solid var(--border);border-radius:999px;padding:0 10px;margin-left:6px;vertical-align:2px}
+.about{display:grid;gap:26px;align-items:center;margin-top:20px}
+.avatar{width:min(260px,70vw);aspect-ratio:1;border-radius:50%;object-fit:cover;border:3px solid var(--accent);display:block;margin:auto}
+.about p{margin-bottom:12px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.chips span{border:1px solid var(--border);background:var(--surface);border-radius:999px;padding:7px 16px;font-size:15px}
+ol{list-style:none;padding:0;display:grid;gap:18px;margin-top:22px;counter-reset:s}
+ol li{counter-increment:s;position:relative;padding-left:48px}
+ol li::before{content:counter(s);position:absolute;left:0;top:0;width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font-weight:700;font-size:15px}
+ol b{display:block}ol span{color:var(--muted)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.btn{display:inline-block;padding:13px 22px;border-radius:14px;font-weight:700;text-decoration:none;border:1px solid var(--border);color:var(--text);background:var(--surface)}
+.btn.primary{border:0;color:#fff;background:linear-gradient(90deg,#6d3df5,#0e8fa0)}
+footer{max-width:1000px;margin:auto;padding:30px 20px 44px;color:var(--muted);font-size:15px;border-top:1px solid var(--border)}
+</style>
+</head>
+<body>
+<header><nav><a class="logo" href="index.html">Kanmisam <span>Studio</span></a><div class="links"><a href="index.html">Home</a><a href="about.html" aria-current="page">About</a><a href="services.html">Services</a><a href="work.html">Work</a><a href="index.html#contact">Contact</a></div></nav></header>
+<main class="wrap">
+<section><p class="eyebrow">About</p><h1>Hi, I’m Oyekanmi Samuel</h1><div class="about"><img class="avatar" src="file_00000000f12c81f4bae1422177fbae76.png" alt="Oyekanmi Samuel" onerror="this.style.display='none'"><div><p>I’m a web designer and developer in Lagos, Nigeria. I build fast, clean websites and AI tools for small businesses, and I also make motion design, like animated logos and short promo clips.</p><p>Kanmisam Studio is the name I work under. I like simple things that work well on a phone and make it easy for customers to contact you.</p></div></div></section><section><h2>What I work with</h2><div class="chips"><span>Python</span><span>JavaScript</span><span>HTML &amp; CSS</span><span>React</span><span>Machine Learning</span><span>APIs</span><span>Figma</span><span>Canva</span><span>Git</span></div></section><section><h2>Let’s build something great</h2><p class="sub">Tell me about your business and I’ll send a free quote.</p><div class="btns"><a class="btn primary" href="https://wa.me/2348021231669" target="_blank" rel="noopener">WhatsApp</a><a class="btn" href="mailto:triggersolos@gmail.com?subject=Website%20enquiry">Email</a><a class="btn" href="https://www.linkedin.com/in/samuel-oyekanmi-5b4a88449" target="_blank" rel="noopener">LinkedIn</a></div></section>
+</main>
+<footer>© 2026 Kanmisam Studio. Built by Oyekanmi Samuel.</footer>
+</body>
+</html>
